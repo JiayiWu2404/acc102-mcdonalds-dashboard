@@ -4,7 +4,7 @@
 
 ## Product Links
 - **GitHub Repository:** https://github.com/JiayiWu2404/acc102-mcdonalds-dashboard
-- **App Link:** Not deployed
+- **App Link:** https://acc102-mcdonalds-dashboard-imnjvadkhuxqcc3czza6ec.streamlit.app/
 - **Demo Video (1–3 minutes):** [Paste your Mediasite video link here]
 
 ## Project Overview
