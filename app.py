@@ -638,23 +638,29 @@ def render_insights_page(data, metrics):
     st.markdown(
         f"""
         1. **Revenue {revenue_direction} from {start_revenue:.2f} billion dollars in {start_year} to {end_revenue:.2f} billion dollars in {end_year}.**  
-           This shows that McDonald's business scale changed substantially across the selected period rather than remaining stable.
+           This shows that McDonald's business scale changed substantially across the selected period rather than remaining stable.  
+           For users, this is important because revenue indicates how large the business became, but not whether that growth was equally efficient or profitable.
 
         2. **Net income {income_direction} from {start_income:.2f} billion dollars in {start_year} to {end_income:.2f} billion dollars in {end_year}.**  
-           Compared with revenue, profit performance appears more volatile, which suggests that sales growth did not always translate into equally stable profit growth.
+           Compared with revenue, profit performance appears more volatile, which suggests that sales growth did not always translate into equally stable profit growth.  
+           This matters because users should not assume that higher sales automatically mean stronger overall financial performance.
 
         3. **Revenue peaked in {revenue_peak_year}, while net income peaked in {income_peak_year}.**  
-           {"Because these peak years are the same, strong sales and strong profit performance aligned in that period." if same_peak else "Because these peak years are different, the year with the highest sales was not necessarily the year with the strongest profit outcome."}
+           {"Because these peak years are the same, strong sales and strong profit performance aligned in that period." if same_peak else "Because these peak years are different, the year with the highest sales was not necessarily the year with the strongest profit outcome."}  
+           This means that users need to compare revenue and net income together rather than relying on a single headline metric.
 
         4. **Operating margin {margin_direction} from {start_margin:.2f}% in {start_year} to {end_margin:.2f}% in {end_year}.**  
            The highest operating margin was recorded in {margin_peak_year}, while the lowest was recorded in {margin_low_year}.  
-           This means McDonald's profitability quality changed over time rather than moving perfectly with business size alone.
+           This indicates that McDonald's profitability quality changed over time rather than moving perfectly with business size alone.  
+           For business students and potential investors, this shows why efficiency and growth quality should be evaluated separately from revenue growth.
 
         5. **The average revenue growth rate was {"N/A" if pd.isna(avg_rev_growth) else f"{avg_rev_growth:.2f}%"} and the average net income growth rate was {"N/A" if pd.isna(avg_income_growth) else f"{avg_income_growth:.2f}%"} in the selected period.**  
-           This helps users compare growth in scale with growth in profit performance, which is more useful than looking at revenue only.
+           This comparison helps users see whether growth in business scale was matched by growth in profit performance.  
+           If these two rates differ meaningfully, it suggests that expansion and profitability were not improving at the same speed.
 
         6. **Overall, the dashboard suggests that larger revenue did not automatically mean stronger profitability in every year.**  
-           For business students and potential investors, this highlights why revenue, net income, and operating margin should be interpreted together.
+           The most useful interpretation is therefore not whether McDonald's grew, but whether that growth was supported by strong profit outcomes and operating efficiency.  
+           This is the main reason why revenue, net income, and operating margin should be interpreted together.
         """
     )
 
@@ -682,7 +688,7 @@ def render_insights_page(data, metrics):
     st.markdown(
         """
         This dashboard is useful because it turns raw financial data into a clearer analytical story.  
-        Users can evaluate whether McDonald's growth was supported by stronger profit outcomes and operating efficiency, not just larger revenue numbers.
+        Instead of only showing whether McDonald's became larger, it helps users evaluate whether that growth was supported by stronger profit performance and operating efficiency.
         """
     )
 
