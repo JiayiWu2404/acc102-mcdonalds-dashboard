@@ -64,16 +64,31 @@ This dashboard helps users evaluate McDonald's performance from multiple angles 
 
 This dashboard includes:
 
-- an **interactive year range filter**
-- a **multi-page dashboard layout**
+- an interactive year range filter
+- a multi-page dashboard layout
 - an **Overview** page with project context and KPI cards
 - a **Full Data Overview** page showing dataset structure, missing values, and summary statistics
 - a **Revenue Trend** page with revenue growth analysis
 - a **Net Income Trend** page with net income growth analysis
 - a **Profitability Analysis** page using operating margin and comparative charts
 - a **Key Insights & Limitations** page with written interpretations
-- an optional **filtered data table display**
-- downloadable **full dataset** and **filtered dataset** outputs
+- an optional filtered data table display
+- downloadable full dataset and filtered dataset outputs
+
+---
+
+## How to Use the Dashboard
+
+Users can interact with the dashboard through the sidebar.
+
+Main actions include:
+
+- selecting a year range
+- navigating between dashboard pages
+- viewing filtered data
+- downloading the full dataset or filtered dataset
+
+This makes the tool more useful for users who want to explore McDonald's financial performance across different time periods.
 
 ---
 
@@ -81,7 +96,7 @@ This dashboard includes:
 
 - **Dataset:** `McDonalds_Financial_Statements.csv`
 - **Source:** Public McDonald's financial statements dataset from Kaggle
-- **Access Date:** [Insert your access date here]
+- **Access Date:** 17 April 2026
 
 The dataset is included in this repository for reproducibility.
 
@@ -176,7 +191,6 @@ plotly
 Files Included
 • app.py – main Streamlit dashboard
 • requirements.txt – required Python packages
-• notebook.ipynb – notebook showing data loading, preparation, analysis, and outputs
 • data/McDonalds_Financial_Statements.csv – dataset used in the project
 • README.md – project documentation
 ￼
@@ -186,7 +200,6 @@ acc102-mcdonalds-dashboard/
 ├── README.md
 ├── app.py
 ├── requirements.txt
-├── notebook.ipynb
 └── data/
     └── McDonalds_Financial_Statements.csv
 ￼
