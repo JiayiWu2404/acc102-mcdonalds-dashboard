@@ -6,7 +6,7 @@
 
 - **GitHub Repository:** https://github.com/JiayiWu2404/acc102-mcdonalds-dashboard
 - **App Link:** https://acc102-mcdonalds-dashboard-imnjvadkhuxqcc3czza6ec.streamlit.app/
-- **Demo Video (1–3 minutes):** [Paste your Mediasite video link here]
+- **Demo Video (1–3 minutes):** https://video.xjtlu.edu.cn/Mediasite/MyMediasite/embedded/presentations/da74914b77404460a018fbcac61326b71d
 
 ---
 
