@@ -214,9 +214,10 @@ This helps ensure that the repository can be run more reliably after cloning.
 
 ## How to Run the App Locally
 
-### 1. Install the required packages
 
 ```bash
+1. Install the required packages
+
 pip install -r requirements.txt
 2. Run the Streamlit app
 streamlit run app.py
